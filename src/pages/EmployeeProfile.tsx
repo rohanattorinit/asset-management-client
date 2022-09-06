@@ -29,8 +29,23 @@ function EmployeeProfile() {
               }}
             ></PersonIcon>
           </Grid>
-          <Grid sx={{ marginLeft: "10px" }}>
+          <Grid
+            sx={{
+              marginLeft: "20px",
+              alignItems: "center",
+            }}
+          >
+            <Typography variant="h6">Employee ID:{"21TCS259"}</Typography>
+
             <Typography variant="h6">Name:{"ARCHANA"}</Typography>
+            <Typography variant="h6">
+              Job Title:{"Associate Software Engineer"}
+            </Typography>
+            <Typography variant="h6">
+              E-mail:{"archana.gangurde@toriit.ca"}
+            </Typography>
+            <Typography variant="h6">Phone:{"9783125154"}</Typography>
+            <Typography variant="h6">Location:{"Pune"}</Typography>
           </Grid>
         </Grid>
       </div>

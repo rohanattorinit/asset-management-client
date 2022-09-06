@@ -3,7 +3,8 @@ import { Grid } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
 //Button from "@mui/material/Button";
 import { Box } from "@mui/system";
-
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material";
 function EmplyoeeAsset() {
   return (
     <>
@@ -11,27 +12,32 @@ function EmplyoeeAsset() {
         <div>
           <h3>Asset</h3>
         </div>
-        <Grid
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            width: "250px",
-            height: "244px",
-            border: "2px solid black",
-            backgroundColor: "#cbcbcb",
-            marginLeft: "10px",
-          }}
-        >
-          <PersonIcon
+        <Grid container>
+          <Grid
             sx={{
-              width: 100,
-              height: 100,
-              marginTop: 7,
+              display: "flex",
+              justifyContent: "center",
+              width: "250px",
+              height: "244px",
+              border: "2px solid black",
+              backgroundColor: "#cbcbcb",
+              marginLeft: "10px",
             }}
-          ></PersonIcon>
-          <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-            {/* <Button variant="contained">Edit</Button> */}
-          </Box>
+          >
+            <Grid>
+              <PersonIcon
+                sx={{
+                  width: 100,
+                  height: 100,
+                  marginTop: 7,
+                  marginLeft: "50px",
+                }}
+              ></PersonIcon>
+
+              <Typography variant="h6">Employee ID:{"21TCS259"}</Typography>
+            </Grid>
+          </Grid>
+          <Grid sx={{ marginLeft: "10px" }}>Current Asset</Grid>
         </Grid>
       </div>
     </>
